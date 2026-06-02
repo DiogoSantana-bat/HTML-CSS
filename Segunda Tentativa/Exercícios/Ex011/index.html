@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Imagens que se adaptam</title>
+</head>
+<body>
+    <h1>Imagens Dinâmicas</h1>
+    <img src="sartra.jpg" alt="sartra">
+    <p>Olá, Sartra mais uma vez aqui. Depois do desafio em que apareci pela primeira vez. Vou estar lhe auxiliando nas aulas, está bem? Espero que esteja entendendo tudo até agora, pois não vou repetir nada para você, ok?</p>
+    <p>Bem, vou te mostrar como é uma imagem que se transforma sozinha. Tente aumentar e diminuir o tamanho do site com o zoom.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.jpg" type="image/jpg">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.jpg" type="image/jpg"> !
+        <img src="Imagens/foto-g.jpg" alt="imagem flexivel"> <!--O maior tem que ser embaixo e o menor em cima-->
+    </picture>~
+    <p>Viu que a foto mudou? Pois é, isso que é uma imagem dinâmica. Fiz isso com a tag <code>&lt;picture&gt;</code> <code>&lt;img&gt;</code> e <code>&lt;source&gt;</code>. (mais informações, olhar no código dessa página).</p>
+
+    <h1>Reproduzindo áudios</h1>
+    <p>Agora vou te mostrar uma música bem legal, quer ouvir? É City Pop, não é pra todos os gostos, mas espero que você aprecie!</p>
+    <audio preload="metadata" src="midia/fridaymagic.mp3" controls></audio>
+</body>
+</html>

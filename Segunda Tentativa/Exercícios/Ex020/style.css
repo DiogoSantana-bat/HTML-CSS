@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+/*
+
+Em HTML é id, no CSS é #
+Em HTML é class, no CSS é .
+
+*/
+@font-face{
+    font-family: 'blackrush';
+    src: url('Blackrush.ttf') format('truetype');
+    
+}
+
+body{
+    background-image: linear-gradient(to bottom, #8332FC, #C532FC);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+main{
+    background-color: white;
+    margin: auto;
+    padding: 10px;
+    width: 60%;
+    border-style: solid;
+    border-radius: 15px;
+}
+h1{
+    color: #FC33E8;
+    text-align: center;
+    font-family: 'blackrush';
+    font-size: 92px;
+    margin: 12px;
+    padding: 2px;
+}
+
+h2{
+    color: #FC33E8;
+    text-align: center;
+
+}
+#subtitulo{
+    text-align: center;
+}
+.um{
+    text-align: center;
+}
+.dois{
+    text-align: center;
+}
+.tres{
+    text-align: center;
+}
+.destaque{
+    background-color: blueviolet;
+}
+h3{
+    color: #911e85;
+}
+p{
+    text-align: justify;
+}

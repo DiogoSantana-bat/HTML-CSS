@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Unkempt:wght@400;700&display=swap');
+        body{
+            background-color: #378B2E;
+        }
+        header{
+            font-family: 'Unkempt';
+            background-color: #074600;
+            color: antiquewhite;
+            text-align: center;
+
+            min-width: 300px;
+            max-width: 730px;
+            margin: 10px auto;
+            padding-left: 10px;
+            padding-bottom: 5px;
+        }
+        header a{
+            font-size: 16pt;
+            text-decoration: none;
+            color: antiquewhite;
+
+            padding-right: 10px;
+        }
+        
+        a:hover{
+            text-decoration: underline;
+        }
+
+        main{
+            background-color: #92D18B;
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+            min-width: 300px;
+            max-width: 700px;
+            padding-top: 2px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 10px;
+            margin: auto;
+            border-radius: 10px;
+        }
+        main h2{
+            font-family: 'Unkempt';
+            text-decoration: underline;
+        }
+        #segredo{
+            display: none;
+        }
+
+        div{
+            width:300px;
+            margin: auto;
+        }
+
+        div:hover > #segredo{
+            display: block;
+        }
+    </style>
+    <title>Jogo de Escolhas</title>
+</head>
+<body>
+    <header>
+        <h1>Jogo de Escolhas (HTML Edition)</h1>
+        <a href="">Início</a>
+        <a href="">Fases</a>
+        <a href="">Extras</a>
+    </header>
+        <main>
+            <h2>Introdução</h2>
+            <div>
+                <a href="https://www.youtube.com/watch?v=x1OwQGzelWs&list=RDx1OwQGzelWs&start_radio=1"><img src="mídias/sartra.png" alt="sartra" width="300px"></a>
+                <br>
+                <p id="segredo">
+                    Você descobriu um link secreto!
+                </p>
+            </div>
+            <p>Boas vindas a primeira edição do jogo de escolhas da <strong>Sartra Noronha</strong>!</p>
+            <p>Primeiramente gostaria de avisá-los de que
+                criei esse jogo apenas como prática para
+                eu ficar bom no <strong>HTML</strong> e <strong>CSS</strong>. Eu comecei agora, então não esperem muita coisa, ok?</p>
+                <p>Bem, como o nome diz, o jogo consiste em fazer escolhas. A cada escolha correta, você irá para a próxima fase. Caso escolha erroneamente, você vai receber uma tela de <br><strong>GAME OVER</strong> e vai voltar diretamente para cá. Não trate esse jogo como um puta teste de QI ou coisa do tipo, mas em certos momentos você terá que pensar fora da caixa. </p>
+                <p>Com isso avisado, acredito que você esteja pronto para começar o jogo. Clique em Iniciar para dar início a sua pequena jornada!</p>
+                <br>
+                <blockquote><i>&quot;A vida é uma jornada de escolhas, onde nossas decisões moldam o destino não apenas de nós mesmos, mas também daqueles que cruzam nosso caminho.&quot;</i> - Manoel Gomes</blockquote>
+                <br>
+                <div style="text-align: center;"><a href="fase um/faseum.html" target="_self"><button>Iniciar</button></a></div>
+        </main>
+</body>
+</html>

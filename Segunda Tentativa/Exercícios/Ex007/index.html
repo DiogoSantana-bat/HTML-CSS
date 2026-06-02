@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Exercício de retorno 07</title>
+</head>
+<body>
+    <h1>Como formatar textos google pesquisar</h1>
+    <h2>Formatações mais utilizadas</h2>
+    <h3>Negrito ou Destaque</h3>
+    <img src="homemapontandoparasi.jpg" alt="">
+    <p><u>Não, não foi o que eu quis dizer...</u></p>
+    <p>Enfim, se eu quiser que meu texto fique em negrito, há duas formas para eu fazer isso. Na verdade, em todas as tags que eu mostrar aqui, tem dois jeitos de fazer: a maneira semântica e a não semântica.</p>
+    <p>Ah, já ia me esquecendo. O negrito serve justamente para destacar alguma palavra, frase, ou parágrafo em um texto que seja de suma importância.</p>
+    <p>Exemplo: "É o seguinte, parceiro. Vou te dar duas <strong>escolhas</strong>. Você prefere comer um <strong>homem</strong> no corpo da sua <strong>namorada</strong> ou comer sua <strong>namorada</strong> no corpo de um <strong>homem</strong>?"</p>
+    <p>A tag semântica para negrito é a <strong>&lt;strong&gt;</strong> e a não semântica é a <b>&lt;b&gt;.</b></p>
+    <h3>Itálico ou Ênfase</h3>
+    <img src="italiano.jpg" alt="">
+    <p><u>Tá bom, chega dessas piadas preconceituosas.</u></p>
+    <p>O itálico serve para destacar palavras estrangeiras, citações, títulos de obras, termos técnicos, etc...</p>
+    <p>Ex: "Certa vez, o ilústre filósofo e cantor MC Magrinho disse: <cite>Você sabe o que é Pumba la Pumba? É o barulho do meu saco batendo na sua bunda.</cite>"</p>
+    <p>Há várias tags semânticas do itálico para certos tipos de situações. Para ênfase, existe o <strong>&lt;em&gt;</strong>, para citações, existe o <strong>&lt;cite&gt;</strong>, para endereços, existe o <strong>&lt;address&gt;</strong>, para definições, existe o <strong>&lt;dfn&gt;</strong>, e a forma não semântica é o <strong>&lt;i&gt;</strong>.</p>
+    <p><b>Observação:</b> Não é recomendado o uso do itálico junto com o negrito.</p>
+    <h2>Marcador de textos (Não faria nenhum sentido se o HTML não tivesse uma maneira de marcar textos)</h2>
+    <p>Para <mark>marcar um texto</mark> também é bem simples, é só utilizar a tag <strong>&lt;mark&gt;</strong> que seu texto estará marcado como se você tivesse passado um marca-textos por cima.</p>
+    <h3>Mudando a cor da marcação</h3>
+    <p>"Ah, mas eu não gostei da cor do marcador ou o fundo do meu site é amarelo." O correto seria mudar isso no CSS, mas vou ensinar apenas para demonstrar que fazer isso no HTML é possível, porém não recomendado.</p>
+    <p>Toda tag (ou a maioria das tags) tem um parâmetro de estilização que pode ser utilizado tanto no CSS quanto no HTML, que é o <strong>style</strong>.</p>
+    <p>Por exemplo, se eu quiser mudar a cor da minha marcação para <mark style="background-color: hotpink;">rosa</mark>, eu utilizo o <strong>&lt;mark style= "background-color: hotpink&gt;</strong>.</p>
+    <p>Viu como é fácil? &#x1F44D</p>
+    <h3>Colocando a mesma cor em todas as marcações</h3>
+    <p>"Mas se eu tiver 300 textos para marcar e não quiser fazer isso individualmente?" Isso também é possível, porém não recomendado fazer no HTML também.</p>
+    <p>Dentro do <strong>&lt;head&gt;</strong>, você pode criar uma tag <strong>&lt;style&gt;</strong> e dentro dela, você cria o seguinte código:</p>
+    <br>
+    <strong>
+        <p>&lt;style&gt;</p>
+        <p>mark {</p>
+            <p>background-color: "hotpink";</p>
+            <p>}</p>
+            <p>&lt;/style&gt;</p>
+    </strong>
+    <br>
+    <p>E pronto, todas as suas marcações estarão da mesma cor!</p>
+    <h2>Como fazer um texto grande e um texto pequeno</h2>
+    <p>Se você utiliza os h1, h2, h3, etc... para textos <big>grandes</big> e <small>pequenos</small>, você está redondamente enganado. Há outra maneira de você fazer isso sem cagar o seu código.</p>
+    <p>Para textos <big>grandes</big>, você utiliza o <strong>&lt;big&gt;</strong> e para textos <small>pequenos</small>, você utiliza o <strong>&lt;small&gt;</strong>.</p>
+    <h3>Tag &lt;big&gt; em desuso</h3>
+    <p>"Mas o <strong>&lt;big&gt;</strong> ficou em vermelho no meu código. Porque isso aconteceu?"</p>
+    <p>Bem, essa tag caiu em desuso depois do lançamento do HTML5 pois não faz muito sentido ter uma tag para aumentar uma letra ou uma palavra quando se pode formatar no CSS. A tag &lt;small&gt;, por outro lado, é utilizada para colocar informações menos importantes em seu site.</p>
+    <h2>Como colocar um texto que foi deletado</h2>
+    <p>Um texto deletado é um texto que é para ser lido, porém desconsiderado.</p>
+    <p>Para colocar um texto deletado, simplesmente utilize a tag <strong>&lt;del&gt;</strong>.</p>
+    <p>Ex: "Eu gosto tanto da Vanusa <del>mesmo que ela tenha trepado com o meu marido todas as vezes que ela fica trabalhando de empregada na minha casa</del>."</p>
+    <h2>Como colocar um texto inserido</h2>
+    <p>Um texto inserido é quase que o contrário do texto deletado. É um texto feito para dar ênfase que foi posto depois.</p>
+    <p>Para colocar um texto inserido, simplesmente utilize a tag <strong>&lt;ins&gt;</strong>.</p>
+    <p>Ex: "Eu odeio o Kilder <ins>por que ele sempre come na minha casa e vai embora logo em seguida</ins>." </p>
+    <p>OBS: O texto inserido é a forma semântica da tag <strong>&lt;u&gt;</strong>, que é o texto sublinhado.</p>
+    <h2>Como colocar um texto sobrescrito e subscrito</h2>
+    <p>Um texto sobrescrito serve para inserir coisas tipo: <dfn>x<sup>20</sup>+3</dfn> </p>
+    <p>Para fazer isso, utilize a tag <strong>&lt;sup&gt;</strong>.</p>
+    <p>Um texto subscrito é a mesma coisa só que ao contrário, como por exemplo: <dfn>H<sub>2</sub>0.</dfn></p>
+    <p>Para fazer isso, utlize a tag <strong>&lt;sub&gt;</strong>.</p>
+    <h2>Fim das explicações</h2>
+    <img src="https://media.tenor.com/AAMEFNsRaeEAAAAM/anime-girl.gif" alt="">
+    <p>Aqui está seu premio. Aproveite bem</p>
+    <a href="C:\Users\Diogo\Pictures\Saved Pictures\fEIAkjJs.jpeg">um pequeno presentinho</a>
+</body>
+</html>

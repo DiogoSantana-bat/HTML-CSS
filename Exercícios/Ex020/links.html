@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Links</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a{
+            color: rgb(251, 128, 255);
+            text-decoration: none;
+            font-weight: bolder;
+        }
+
+        a:hover{
+            text-decoration: underline;
+            color: black;
+        }
+
+        a:visited{
+            color: darkred;
+        }
+
+        a:active{
+            color: yellow;
+        }
+
+        a.especial::before{
+            content: ' ⇒';
+            color: blueviolet;
+        }
+
+        a.especial::after{
+            content:' ⇐';
+            text-decoration: none;
+            font-weight: normal;
+            color: blueviolet;
+        }
+
+        .especial{
+            background-color: rgb(141, 141, 255);
+            color: white;
+        }
+
+        img{
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <img src="https://www.zeldadungeon.net/wiki/images/thumb/6/60/Link-Kneeling-Shield.png/400px-Link-Kneeling-Shield.png" alt="entendeu?">
+    <img src="https://www.zeldadungeon.net/wiki/images/thumb/6/60/Link-Kneeling-Shield.png/400px-Link-Kneeling-Shield.png" alt="entendeu?">
+    <p>entendeu? links? piada horrível, eu sei...</p>
+    <h1>Músicas fodas</h1>
+    <ul>
+   <li><a href="https://youtu.be/l5sCh2ODVX4?si=tZMtZZI7G9WlLhOi">
+        musica foda 1
+    </a></li>
+   <li><a href="https://youtu.be/ZWG8enSfkCY?si=f-LOFDIYzLk2K9aV" class="especial">
+        musica foda 2
+    </a></li>
+    <li><a href="https://youtu.be/n5h0qHwNrHk?si=HEHeO9E2QZNA-XPX">
+        musica foda 3
+    </a></li>
+    </ul>
+</body>
+</html>
