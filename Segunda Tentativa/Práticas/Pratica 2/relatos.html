@@ -1,6 +1,11 @@
-@charset "UTF-8";
-
-@font-face {
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        @font-face {
     font-family:'special';
     src: url(SpecialElite-Regular.ttf);
 }
@@ -45,7 +50,6 @@ header h2:active{
     text-decoration: underline;
     color: white;
 }
-
 nav{
     font-family: 'special';
     background-color: rgb(129, 129, 129);
@@ -76,7 +80,7 @@ nav a:active{
 
 main{
     background-color:#818181;
-    margin: 15px auto;
+    margin: 15px auto 264px auto;
     padding: 7px 12px;
     min-width: 300px;
     max-width: 1000px;
@@ -85,47 +89,25 @@ main{
     border-style: solid;
 }
 
-main > p{
-    padding: 10px 7px;
-    text-align: center;
-    font-size: 1.1em;
-    line-height: 28px;
-}
-.subtitulo{
+main > h2{
     font-family: 'special';
-    font-size: 2em;
-    padding-top: 12px;
-    padding-left: 7px;
-    
+    padding-bottom: 7px;
 }
 
-aside{
-    background-color:#818181;
-    margin: 15px auto;
-    padding: 7px 12px;
-    min-width: 300px;
-    max-width: 500px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    text-align: center;
-    border-radius: 12px;
-    border-style: solid;
-}
-
-aside h3{
+main a{
     font-family: 'special';
-    padding-top: 15px;
-    padding-left: 8px;
+    padding-left: 17px;
+    text-decoration: none;
+    color: black;
 }
 
-aside img{
-    max-width: 250px;
+main a:hover{
+    text-decoration: underline;
 }
 
-aside p{
-    padding: 5px 7px;
-    font-size: 1.1em;
-    line-height: 38px;
-
+main a:active{
+    text-decoration: underline;
+    color: white;
 }
 
 footer{
@@ -150,3 +132,28 @@ footer a:active{
     text-decoration: underline;
     color: white;
 }
+    </style>
+    <title>Relatos</title>
+</head>
+<body>
+    <header>
+        <img id="olho" src="olhochorando.png" alt="">
+        <h1>A Sala das Lágrimas</h1>
+        <a href="https://youtu.be/samTSlptTQI?si=kig-J-Cu7RAjfa6_" target="_blank">
+            <h2>O melhor local para chorar</h2>
+        </a>  
+    </header>
+    <nav>
+                <a href="inicio.html">Início</a>
+                <a href="relatos.html">Relatos</a>
+                <a href="#">Contato</a>
+     </nav>
+     <main>
+        <h2>Relatos oriundos da dor</h2>
+        <a href="">Gabriela e a dor da saudade</a>
+     </main>
+     <footer>
+        <p>Escrito com <a href="https://www.youtube.com/watch?v=WO_LgaQAVnE" target="_self">sangue</a> por Sartra Noronha</p>
+    </footer>
+</body>
+</html>
