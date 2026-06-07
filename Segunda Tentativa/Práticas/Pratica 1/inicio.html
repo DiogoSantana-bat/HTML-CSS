@@ -6,6 +6,12 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Unkempt:wght@400;700&display=swap');
+
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+
         body{
             background-color: #378B2E;
         }
@@ -17,20 +23,28 @@
 
             min-width: 300px;
             max-width: 730px;
-            margin: 10px auto;
+            margin: 0px auto 10px auto;
+            padding-top: 10px;
             padding-left: 10px;
-            padding-bottom: 5px;
+            padding-bottom: 10px;
         }
+
+        header h1{
+            padding-bottom: 10px;
+        }
+
         header a{
             font-size: 16pt;
             text-decoration: none;
             color: antiquewhite;
+            transition: 0.5s;
 
             padding-right: 10px;
         }
         
         a:hover{
             text-decoration: underline;
+            color: #378B2E;
         }
 
         main{
@@ -50,6 +64,7 @@
         main h2{
             font-family: 'Unkempt';
             text-decoration: underline;
+            margin: auto;
         }
         #segredo{
             display: none;
@@ -57,11 +72,23 @@
 
         div{
             width:300px;
-            margin: auto;
+            margin: 0px auto 20px auto;
         }
 
         div:hover > #segredo{
             display: block;
+        }
+
+        main button{
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        footer{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            background-color: #92D18B;
+
+            margin: 7px auto 0px auto;
         }
     </style>
     <title>Jogo de Escolhas</title>
@@ -72,6 +99,7 @@
         <a href="">Início</a>
         <a href="">Fases</a>
         <a href="">Extras</a>
+        <a href="">Créditos</a>
     </header>
         <main>
             <h2>Introdução</h2>
@@ -92,6 +120,12 @@
                 <blockquote><i>&quot;A vida é uma jornada de escolhas, onde nossas decisões moldam o destino não apenas de nós mesmos, mas também daqueles que cruzam nosso caminho.&quot;</i> - Manoel Gomes</blockquote>
                 <br>
                 <div style="text-align: center;"><a href="fase um/faseum.html" target="_self"><button>Iniciar</button></a></div>
+                <audio autoplay src="mídias/Cidade Capital.mp3"></audio>
         </main>
+        <footer>
+            <marquee behavior="scroll" direction="left">
+                <p>Criado e idealizado por <b>Diogo Santana</b>, conhecido artisticamente como <b>Sartra Noronha</b></p>
+            </marquee>
+        </footer>
 </body>
 </html>
